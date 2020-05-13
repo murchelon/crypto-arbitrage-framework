@@ -1,1 +1,111 @@
 
+-------------------------------
+2020-05-12 05:55:03.138011+08:00
+profit rate: 0.0008396101099559239, arbitrage path: [('binance_BTC', 'binance_ETH'), ('binance_ETH', 'binance_DATA'), ('binance_DATA', 'binance_BTC')]
+no workable solution
+
+-------------------------------
+2020-05-12 05:55:24.440001+08:00
+profit rate: 0.0012105834167657203, arbitrage path: [('binance_BTC', 'binance_ETH'), ('binance_ETH', 'binance_DATA'), ('binance_DATA', 'binance_BTC')]
+no workable solution
+
+-------------------------------
+2020-05-12 06:02:09.879000+08:00
+profit rate: 0.00030791159278953373, arbitrage path: [('binance_BTC', 'binance_BNB'), ('binance_BNB', 'binance_BRD'), ('binance_BRD', 'binance_BTC')]
+no workable solution
+
+-------------------------------
+2020-05-12 06:02:30.973999+08:00
+profit rate: 0.0001360964241874374, arbitrage path: [('binance_BTC', 'binance_BNB'), ('binance_BNB', 'binance_BRD'), ('binance_BRD', 'binance_BTC')]
+no workable solution
+
+-------------------------------
+2020-05-12 06:05:15.603523+08:00
+profit rate: 0.0007223520278727413, arbitrage path: [('binance_BTC', 'binance_ETH'), ('binance_ETH', 'binance_BCD'), ('binance_BCD', 'binance_BTC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:14:14.468325+08:00
+profit rate: 0.0011687145942866906, arbitrage path: [('poloniex_LTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC'), ('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_LTC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:14:23.469320+08:00
+profit rate: 0.0011094585621667097, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:14:32.759319+08:00
+profit rate: 0.00126705716437292, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:14:42.138321+08:00
+profit rate: 0.0017137347363782585, arbitrage path: [('poloniex_USDC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC'), ('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:14:51.233321+08:00
+profit rate: 0.0017137347363773703, arbitrage path: [('poloniex_USDC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC'), ('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:15:00.527322+08:00
+profit rate: 0.0017137347363773703, arbitrage path: [('poloniex_USDC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC'), ('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:15:51.093321+08:00
+profit rate: 0.0002776428439070777, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:00.480325+08:00
+profit rate: 0.0002776428310782286, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:09.662320+08:00
+profit rate: 0.0002776428310782286, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:18.917319+08:00
+profit rate: 0.0002776428310782286, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:28.218320+08:00
+profit rate: 0.0002776428310782286, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:37.258326+08:00
+profit rate: 0.0002776428345767634, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:46.320321+08:00
+profit rate: 0.0003276596900561035, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:16:55.885322+08:00
+profit rate: 0.0003276596900561035, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:17:05.402320+08:00
+profit rate: 0.00037767779572472904, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:17:14.627326+08:00
+profit rate: 0.00023582371490316056, arbitrage path: [('poloniex_FXC', 'poloniex_BTC'), ('poloniex_BTC', 'poloniex_USDT'), ('poloniex_USDT', 'poloniex_FXC')]
+no workable solution
+
+-------------------------------
+2020-05-12 07:24:03.671599+08:00
+profit rate: 5.65496565749779e-05, arbitrage path: [('poloniex_BTC', 'poloniex_USDC'), ('poloniex_USDC', 'poloniex_ETH'), ('poloniex_ETH', 'poloniex_BTC')]
+Solution: OrderedDict([(('poloniex_BTC', 'poloniex_USDC'), {'vol': 0.00196399, 'price': 8554.94750668, 'direction': 'bid_sell'}), (('poloniex_ETH', 'poloniex_USDC'), {'vol': 0.09079785, 'price': 185.02807236, 'direction': 'ask_buy'}), (('poloniex_ETH', 'poloniex_BTC'), {'vol': 0.09078877, 'price': 0.02163699, 'direction': 'bid_sell'})]), final profit: 2.092690314397216e-07 poloniex_BTC
+

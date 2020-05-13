@@ -1,3 +1,31 @@
+
+modificacoes:
+
+no arquivo exchange.py tive de mudar de kukoin2 para kuoin
+'kucoin': ccxt.kucoin(),
+
+
+pip install pytz
+
+pip install lxml
+
+tive de tirar o crypto dos imports
+no path optimizer tive de tirar o ponto
+
+from info import fiat, trading_fee, tokens
+from utils import get_withdrawal_fees, get_crypto_prices, multiThread
+
+em amoubnt optimizer tive de tirar o ponto
+
+from utils import multiThread
+
+em trade execution tive de tirar o ponto
+
+from utils import killable_multiThread
+
+main.py linha 37 tive de comentar
+
+
 # Crypto Arbitrage Framework
 A cryptocurrency arbitrage framework implemented with **`ccxt`** and **`cplex`**. It can be used to monitor multiple exchanges, find a multi-lateral arbitrage path which maximizes rate of return, calculate the optimal trading amount for each pair in the path given flexible constraints, and execute trades with multi-threading implemenation.
 <p align="center"><img width="800" src="https://user-images.githubusercontent.com/30411828/58489243-725c2200-819d-11e9-8a17-ae8aa6d35ec2.PNG"></p>

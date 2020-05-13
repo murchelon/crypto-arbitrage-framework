@@ -1,5 +1,5 @@
 import time
-from .utils import killable_multiThread
+from utils import killable_multiThread
 
 
 class TradeExecutor:

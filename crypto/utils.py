@@ -36,7 +36,8 @@ def get_withdrawal_fees(exchange, trading_size=1000):
         return withdrawal_fee
 
     else:
-        raise ValueError('{} is not an exchange supported by withdrawalfees.com'.format(exchange))
+        pass
+        # raise ValueError('{} is not an exchange supported by withdrawalfees.com'.format(exchange))
 
 
 def get_crypto_prices(coin_set, convert='USD'):
@@ -50,7 +51,7 @@ def get_crypto_prices(coin_set, convert='USD'):
     }
     headers = {
         'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'X-CMC_PRO_API_KEY': '4c6c5071-3a11-4f0a-839d-ff74664c00a5',
     }
 
     session = Session()

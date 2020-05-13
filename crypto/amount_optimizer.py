@@ -1,7 +1,7 @@
 from docplex.mp.model import Model
 import numpy as np
 from itertools import combinations
-from .utils import multiThread
+from utils import multiThread
 from collections import OrderedDict
 
 

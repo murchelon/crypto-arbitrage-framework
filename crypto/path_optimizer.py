@@ -1,8 +1,8 @@
 from docplex.mp.model import Model
 import numpy as np
 from itertools import combinations
-from .info import fiat, trading_fee, tokens
-from .utils import get_withdrawal_fees, get_crypto_prices, multiThread
+from info import fiat, trading_fee, tokens
+from utils import get_withdrawal_fees, get_crypto_prices, multiThread
 import re
 from copy import deepcopy
 
@@ -164,7 +164,8 @@ class PathOptimizer(Model):
         thread_num = len(exc_name_list)
         exc_price_list = multiThread(self.parallel_fetch_tickers, exc_name_list, thread_num)
         for exc_price in exc_price_list:
-            self.price.update(exc_price)
+            if exc_price is not None:
+                self.price.update(exc_price)
 
         for pair, items in self.price.items():
             from_cur, to_cur = pair.split('/')
@@ -238,8 +239,7 @@ class PathOptimizer(Model):
         # intra exchange commission fee
         for exc_name in self.exchanges.keys():
             indexes = [index for cur_name, index in self.currency2index.items() if exc_name in cur_name]
-            self.commission_matrix[np.meshgrid(indexes, indexes, indexing='ij', sparse=True)] = self.trading_fee[
-                exc_name]
+            self.commission_matrix[np.meshgrid(indexes, indexes, indexing='ij', sparse=True)] = self.trading_fee[exc_name]
 
         # inter exchange commission fee
         for from_cur, to_cur in self.inter_convert_list:

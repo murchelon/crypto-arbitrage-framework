@@ -1,27 +1,36 @@
-from crypto.exchanges import exchanges
-from crypto.path_optimizer import PathOptimizer
-from crypto.amount_optimizer import AmtOptimizer
-from crypto.trade_execution import TradeExecutor
-from crypto.utils import save_record
+from exchanges import exchanges
+from path_optimizer import PathOptimizer
+from amount_optimizer import AmtOptimizer
+from trade_execution import TradeExecutor
+from utils import save_record
 import time
 
 if __name__ == '__main__':
 
+
+
     # simulate the balance of coins in each exchange so that arbitrage opportunities in such asset allocation can be tested
     simulated_bal = {
         'kucoin': {'BTC': 10, 'ETH': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000},
-        'binance': {'BTC': 10, 'ETH': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000},
+        'binance': {'BTC': 10, 'ETH': 200, 'ETC': 200, 'NANO': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000, 'DOGE': 80000},
         'bittrex': {'BTC': 10, 'ETH': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000},
+        'bitstamp': {'BTC': 10, 'ETH': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000},
+        'poloniex': {'BTC': 10, 'ETH': 200, 'ETC': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000, 'DOGE': 80000},
+        'bitforex': {'BTC': 10, 'ETH': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000},
+        'hitbtc': {'BTC': 10, 'ETH': 200, 'NEO': 1000, 'XRP': 30000, 'XLM': 80000},
+
     }
     
     # inititate the path_optimizer with extra parameters
     path_optimizer = PathOptimizer(
         exchanges,
-        path_length=6, # to allow arbitrage path of max length 10
+        path_length=5, # to allow arbitrage path of max length 10
         simulated_bal=simulated_bal, # check opportunities with simulated balance
         interex_trading_size=2000, # approximate the inter exchange trading size to be 2000 USD
         inter_exchange_trading=True,
-        min_trading_limit=10 # minimum trading limit is 10 USD
+        consider_init_bal=False,
+        consider_inter_exc_bal=True,
+        min_trading_limit=5 # minimum trading limit is 10 USD
     )
     path_optimizer.init_currency_info()
     # inititate the amt_optimizer, considers top 100 orders from the order book when doing amount optimization.
@@ -34,7 +43,8 @@ if __name__ == '__main__':
 
         # move all the kucoin money to trade wallet, kucoin is special for having two wallets main and trade wallet, details can be checked on kucoin.com
         if i % 1500 == 0:
-            trade_executor.kucoin_move_to_trade()
+            # trade_executor.kucoin_move_to_trade()
+            pass
         
         # find arbitrage
         path_optimizer.find_arbitrage()
@@ -48,4 +58,4 @@ if __name__ == '__main__':
                 solution = amt_optimizer.trade_solution
                 trade_executor.execute(solution)
         # rest for 20 seconds as some of the apis do not allow too frequent requests
-        time.sleep(20)
+        time.sleep(8)
